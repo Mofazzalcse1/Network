@@ -1,0 +1,29 @@
+router rip
+network 192.168.20.0
+exit
+..............
+
+
+router rip
+ version 2
+
+
+............
+
+
+router ospf 1
+network 192..168.10.0 0.0.0.15 area 1
+
+router ospf 2
+network 192..168.20.0 0.0.0.15 area 1
+
+
+.....................
+
+
+router eigrp 10
+
+network 192..168.10.0 0.0.0.15 
+
+router eigrp 10
+network 192..168.20.0 0.0.0.15 
